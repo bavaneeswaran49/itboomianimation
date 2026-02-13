@@ -40,9 +40,6 @@ const Contrast2 = {
     },
   },
 };
-
-
-
 const Float1 = {
   initial: { y: -190, x: 180 },
   hover: {
@@ -145,13 +142,13 @@ function Work1() {
               />
             </motion.div>
 
-            <motion.div
+            <motion.div  className="blur"
               variants={Float1}
               initial="initial"
               animate={jugle ? "hover" : "initial"}
 
-              style={glassBoxStyle}>
-              <div >
+              style={blur}>
+              <div>
                 <motion.div initial="initial"
                   animate={jugle ? "hover" : "initial"}
                   variants={Float8} style={iconStyle("#6941c6")}>
@@ -164,12 +161,12 @@ function Work1() {
                 </div>
               </div>
             </motion.div>
-            <motion.div
+            <motion.div className="blur"
               initial="initial"
               animate={jugle ? "hover" : "initial"}
 
               variants={Float2}
-              style={glassBoxStyle}>
+              style={blur}>
               <div>
                 <motion.div initial="initial"
                   animate={jugle ? "hover" : "initial"}
@@ -223,9 +220,9 @@ function Work1() {
   );
 }
 
-const glassBoxStyle = {
+const blur = {
   position: "absolute",
-  width: "225px",
+  width: "250px",
   height: "100px",
   backgroundColor: "rgba(255, 255, 255, 0.3)",
   backdropFilter: "blur(10px)",

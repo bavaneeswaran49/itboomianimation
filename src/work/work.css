@@ -121,3 +121,26 @@
     font-weight: 300;
     font-size: 16px;
 }
+@media (max-width: 480px) {
+
+  .contrast {
+    width: 280px !important;
+    height: 280px !important;
+  }
+
+  .contrast1 {
+    width: 220px !important;
+    height: 220px !important;
+  }
+
+  .contrast4 {
+    width: 140px !important;
+  }
+
+  .blur {
+    display: none!important;
+  }
+  .none,.epis{
+    display: none!important;
+  }
+}

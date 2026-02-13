@@ -81,3 +81,76 @@
 .sb {
     padding-top: 50px;
 }
+
+.sb > div {
+  width: 100% !important;
+  max-width: 500px !important;
+  height: auto !important;
+  aspect-ratio: 1 / 1;
+}
+.sb > div > div {
+  width: 80% !important;
+  height: 80% !important;
+}
+.sb img[alt="main"] {
+  width: 55% !important;
+  height: auto !important;
+  max-height: 80% !important;
+}
+
+.sb div[style*="backdrop-filter"] {
+  width: 60% !important;
+  max-width: 225px !important;
+  height: auto !important;
+  padding: 15px !important;
+}
+@media (max-width: 992px) {
+
+  .sb {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+}
+@media (max-width: 769px) {
+
+  .second {
+    padding: 40px 20px;
+  }
+
+  .sb > div {
+    max-width: 350px !important;
+  }
+
+  .sb img[alt="main"] {
+    width: 65% !important;
+  }
+
+  .para12,
+  .h4,
+  .para13 {
+    text-align: center;
+  }
+
+  .design,
+  .designn {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .verify {
+    width: 35px;
+  }
+  .blur{
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .sb > div {
+    max-width: 280px !important;
+  }
+  .sb img[alt="main"] {
+    width: 70% !important;
+  }
+}

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import img from "../assets/Task prototype/ig1.png";
 import instagram from "../assets/instagram.png";
@@ -130,7 +129,7 @@ const Arrow = {
 }
 
 function Work() {
-  const[work,setWork]=useState(false);
+
   return (
     <>
       <div className="container landing">
@@ -229,7 +228,7 @@ function Work() {
                     }}
                   />
                 </motion.div>
-                <motion.div variants={Float1} style={blur}>
+                <motion.div className="epis"  variants={Float1} style={blur}>
                   <div style={{ display: "flex", alignItems: "center", gap: "15px" }} >
                     <motion.div variants={Float8} style={icon("#6941c6")}>
                       <img src={home} alt="home" />
@@ -241,7 +240,7 @@ function Work() {
                     </div>
                   </div>
                 </motion.div>
-                <motion.div variants={Float2} style={blur}>
+                <motion.div className="epis"  variants={Float2} style={blur}>
                   <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
                     <motion.div variants={Float8} style={icon("#6941c6")}>
                       <img src={home} alt="home" />
@@ -252,19 +251,19 @@ function Work() {
                     </div>
                   </div>
                 </motion.div>
-                <motion.div variants={Float3} style={icon("#1aaa42")}>
+                <motion.div variants={Float3} style={icon("#1aaa42")} className="none">
                   <img src={verify} alt="verify" width="24" />
                 </motion.div>
-                <motion.div variants={Float4} style={icon("#f178b6")}>
+                <motion.div variants={Float4} style={icon("#f178b6")} className="none">
                   <img src={wifi} alt="wifi" width="24" />
                 </motion.div>
-                <motion.div variants={Float5} style={icon("#229af1")}>
+                <motion.div variants={Float5} style={icon("#229af1")} className="none">
                   <img src={play} alt="play" width="24" />
                 </motion.div>
-                <motion.div variants={Float6} style={icon("#ff0032")}>
+                <motion.div variants={Float6} style={icon("#ff0032")} className="none">
                   <img src={instagram} alt="instagram" width="24" />
                 </motion.div>
-                <motion.div variants={Float7} style={icon("#6941c6")}>
+                <motion.div variants={Float7} style={icon("#6941c6")} className="none">
                   <img src={home} alt="home2" width="24" />
                 </motion.div>
               </motion.div>
@@ -307,7 +306,6 @@ function Work() {
     </>
   );
 }
-
 
 const blur = {
   position: "absolute",
