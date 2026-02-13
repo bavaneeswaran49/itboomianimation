@@ -1,0 +1,108 @@
+.landing {
+    margin-top: clamp(90px, 10vh, 150px);
+}
+
+.start {
+    padding-top: clamp(0px, 5vh, 50px);
+}
+
+.lan1 {
+    padding-left: 10px;
+}
+
+.para1 {
+    margin-top: clamp(20px, 17vh, 160px);
+    width: 195px;
+    height: 40px;
+    padding: 10px 20px;
+    border-radius: 32px;
+    background-color: #e9d7fe;
+    color: #6941C6;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.lanh1 {
+    font-weight: 600;
+    font-size: clamp(26px, 5rem, 54px);
+    line-height: 100%;
+    padding-bottom: 24px;
+}
+
+.para2 {
+    font-weight: 500;
+    color: #797979;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+.fbuttons{
+    display: flex;
+    gap: 30px;
+}
+.fbutton1{
+    background-color: #1D2939;
+    color: white;
+    padding: 7px 20px;
+    border-radius: 20px;
+    display: flex;
+    
+}
+.fbutton2{
+    padding: 7px 20px;
+    border-radius: 20px;
+}
+.fbuttonp{
+    margin: 0px;
+}
+.fbuttoni{
+    padding: 7px 5px;
+    font-size: 25px;
+}
+.fbutton2{
+    display: flex;
+    gap: 20px;
+}
+.fbuttonp{
+    font-weight: 600;
+}
+.fbuttoni2{
+    color: #6941C6;
+}
+.landing2{
+    background-color: #6941C6;
+    margin-top: clamp(30px,20vh,130px);
+    border-radius: 30px;
+    padding: 25px 50px!important;
+}
+.bo{
+    border-left: 1px solid rgba(255, 255, 255, 0.13);
+}
+.ricon{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: 2px white dotted;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 2s ease-in-out;
+}
+.ricon:hover{
+    transform: rotate(360deg);
+}
+.ricon1{
+    font-size: 25px;
+    color: white;
+}
+.riconh1{
+    padding-top: 20px;
+    font-weight: 600;
+    color: #e9d7fe;
+    font-size: 25px;
+}
+.riconp{
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+}
