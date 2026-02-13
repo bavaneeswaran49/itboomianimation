@@ -43,11 +43,11 @@ const Contrast2 = {
 
 
 const Float1 = {
-  initial: { y: -130, x: 100 },
+  initial: { y: -190, x: 180 },
   hover: {
     y: -250,
     x: 150,
-    transition: { type: "spring", stiffness: 200, damping: 12 },
+    transition: { type: "spring", stiffness: 200, damping: 15 },
   },
 };
 
@@ -56,7 +56,7 @@ const Float2 = {
   hover: {
     y: 200,
     x: -50,
-    transition: { type: "spring", stiffness: 200, damping: 12 },
+    transition: { type: "spring", stiffness: 200, damping: 15 },
   },
 };
 
@@ -137,7 +137,11 @@ function Work1() {
               />
             </motion.div>
 
-            <motion.div variants={Float1} style={glassBoxStyle}>
+            <motion.div
+              // initial="initial"
+              // whileHover="hover"
+              variants={Float1}
+              style={glassBoxStyle}>
               <div >
                 <motion.div variants={Float8} style={iconStyle("#6941c6")}>
                   <img src={home} alt="home" />
@@ -151,7 +155,11 @@ function Work1() {
             </motion.div>
 
 
-            <motion.div variants={Float2} style={glassBoxStyle}>
+            <motion.div
+              // initial="initial"
+              // whileHover="hover"
+              variants={Float2}
+              style={glassBoxStyle}>
               <div>
                 <motion.div variants={Float8} style={iconStyle("#6941c6")}>
                   <img src={home} alt="home" />
@@ -172,25 +180,25 @@ function Work1() {
             tempor incididunt ut labore et dolore magna aliqua. enim minim veniam</p>
           <div className="design">
             <div className="design1">
-                <img src={verify} className="verify"></img>
+              <img src={verify} className="verify"></img>
             </div>
             <div className="design12">
               <h5>Optimization Engine Rank</h5>
               <p>Lorem ipsum dolor sit amet consecte nadipiscing elit</p>
             </div>
           </div>
-           <div className="designn">
+          <div className="designn">
             <div className="design1">
-                <img src={verify} className="verify"></img>
+              <img src={verify} className="verify"></img>
             </div>
             <div className="design12">
               <h5>Optimization Engine Rank</h5>
               <p>Lorem ipsum dolor sit amet consecte nadipiscing elit</p>
             </div>
           </div>
-           <div className="design">
+          <div className="design">
             <div className="design1">
-                <img src={verify} className="verify"></img>
+              <img src={verify} className="verify"></img>
             </div>
             <div className="design12">
               <h5>Optimization Engine Rank</h5>
@@ -202,7 +210,6 @@ function Work1() {
     </div>
   );
 }
-
 
 const glassBoxStyle = {
   position: "absolute",
