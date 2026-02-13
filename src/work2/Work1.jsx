@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import img from "../assets/Task prototype/ig1.png";
 import home from "../assets/safe-home.png";
@@ -8,14 +9,14 @@ const Contrast = {
   initial: { scale: 1 },
   hover: {
     scale: 1,
-    transition: { type: "spring", stiffness: 620, damping: 12 },
+    transition: { type: "spring", stiffness: 620, damping: 15 },
   },
 };
 
 const Contrast1 = {
   initial: { scale: 1 },
   hover: {
-    scale: 1.02,
+    scale: 1,
     transition: { type: "spring", stiffness: 620, damping: 15 },
   },
 };
@@ -69,15 +70,18 @@ const Float8 = {
 };
 
 function Work1() {
+  const [jugle, setJugle] = useState(false);
   return (
     <div
       className="second container"
     >
       <div className="row">
-        <div className="col-lg-5 col-md-12 col-sm-12">
+        <div className="col-lg-5 col-md-12 col-sm-12 sb">
           <motion.div
             initial="initial"
-            whileHover="hover"
+            animate={jugle ? "hover" : "initial"}
+            onMouseEnter={() => setJugle(true)}
+            onMouseLeave={() => setJugle(false)}
             variants={Contrast}
             style={{
               width: "500px",
@@ -90,10 +94,11 @@ function Work1() {
               position: "relative",
               overflow: "visible",
             }}
-
           >
-
             <motion.div
+              initial="initial"
+              animate={jugle ? "hover" : "initial"}
+
               variants={Contrast1}
               style={{
                 width: "400px",
@@ -125,6 +130,9 @@ function Work1() {
                 variants={Contrast2}
                 src={img}
                 alt="main"
+                initial="initial"
+                animate={jugle ? "hover" : "initial"}
+
                 style={{
                   position: "absolute",
                   bottom: "0px",
@@ -138,12 +146,15 @@ function Work1() {
             </motion.div>
 
             <motion.div
-              // initial="initial"
-              // whileHover="hover"
               variants={Float1}
+              initial="initial"
+              animate={jugle ? "hover" : "initial"}
+
               style={glassBoxStyle}>
               <div >
-                <motion.div variants={Float8} style={iconStyle("#6941c6")}>
+                <motion.div initial="initial"
+                  animate={jugle ? "hover" : "initial"}
+                  variants={Float8} style={iconStyle("#6941c6")}>
                   <img src={home} alt="home" />
                 </motion.div>
 
@@ -153,15 +164,16 @@ function Work1() {
                 </div>
               </div>
             </motion.div>
-
-
             <motion.div
-              // initial="initial"
-              // whileHover="hover"
+              initial="initial"
+              animate={jugle ? "hover" : "initial"}
+
               variants={Float2}
               style={glassBoxStyle}>
               <div>
-                <motion.div variants={Float8} style={iconStyle("#6941c6")}>
+                <motion.div initial="initial"
+                  animate={jugle ? "hover" : "initial"}
+                  variants={Float8} style={iconStyle("#6941c6")}>
                   <img src={home} alt="home" />
                 </motion.div>
 
@@ -207,13 +219,13 @@ function Work1() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
 const glassBoxStyle = {
   position: "absolute",
-  width: "325px",
+  width: "225px",
   height: "100px",
   backgroundColor: "rgba(255, 255, 255, 0.3)",
   backdropFilter: "blur(10px)",
@@ -223,6 +235,7 @@ const glassBoxStyle = {
   alignItems: "center",
   borderRadius: "20px",
   zIndex: 20,
+  pointerEvents: "none"
 };
 
 const iconStyle = (color) => ({

@@ -14,6 +14,16 @@
     margin-bottom: 20px;
 }
 
+@media (max-width:972px) {
+    .para12 {
+        margin-top: 100px;
+    }
+
+    .designn {
+        margin-left: 0px !important;
+    }
+}
+
 .h4 {
     font-weight: 600 !important;
     font-size: 34px !important;
@@ -66,4 +76,8 @@
 .designn:hover,
 .design:hover {
     background-color: #8f67ed49;
+}
+
+.sb {
+    padding-top: 50px;
 }

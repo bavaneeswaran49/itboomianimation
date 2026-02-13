@@ -36,49 +36,60 @@
     line-height: 24px;
     margin-bottom: 24px;
 }
-.fbuttons{
+
+.fbuttons {
     display: flex;
     gap: 30px;
 }
-.fbutton1{
+
+.fbutton1 {
     background-color: #1D2939;
     color: white;
     padding: 7px 20px;
     border-radius: 20px;
     display: flex;
-    
+
 }
-.fbutton2{
+
+.fbutton2 {
     padding: 7px 20px;
     border-radius: 20px;
 }
-.fbuttonp{
+
+.fbuttonp {
     margin: 0px;
 }
-.fbuttoni{
+
+.fbuttoni {
     padding: 7px 5px;
     font-size: 25px;
 }
-.fbutton2{
+
+.fbutton2 {
     display: flex;
     gap: 20px;
 }
-.fbuttonp{
+
+.fbuttonp {
     font-weight: 600;
 }
-.fbuttoni2{
+
+.fbuttoni2 {
     color: #6941C6;
 }
-.landing2{
+
+.landing2 {
     background-color: #6941C6;
-    margin-top: clamp(30px,20vh,130px);
+    margin-top: clamp(30px, 20vh, 130px);
     border-radius: 30px;
-    padding: 25px 50px!important;
+    padding: 25px 50px !important;
 }
-.bo{
+
+.bo {
     border-left: 1px solid rgba(255, 255, 255, 0.13);
 }
-.ricon{
+
+.ricon {
     height: 50px;
     width: 50px;
     border-radius: 25px;
@@ -88,20 +99,24 @@
     align-items: center;
     transition: transform 2s ease-in-out;
 }
-.ricon:hover{
+
+.ricon:hover {
     transform: rotate(360deg);
 }
-.ricon1{
+
+.ricon1 {
     font-size: 25px;
     color: white;
 }
-.riconh1{
+
+.riconh1 {
     padding-top: 20px;
     font-weight: 600;
     color: #e9d7fe;
     font-size: 25px;
 }
-.riconp{
+
+.riconp {
     color: white;
     font-weight: 300;
     font-size: 16px;
