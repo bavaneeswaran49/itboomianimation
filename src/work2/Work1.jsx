@@ -23,9 +23,9 @@ const Contrast1 = {
 
 const Contrast2 = {
   initial: {
-    y: 70,
+    y: 60,
     width: "220px",
-    height: "290px",
+    height: "390px",
     borderRadius: "10%",
   },
   hover: {

@@ -88,10 +88,11 @@
 
 .bo {
     border-left: 1px solid rgba(255, 255, 255, 0.13);
-   padding-top: clamp(25px, 3vh, 20px);
+    padding-top: clamp(25px, 3vh, 20px);
 }
-.b{
-     padding-top: clamp(25px, 3vh, 20px);
+
+.b {
+    padding-top: clamp(25px, 3vh, 20px);
 }
 
 .ricon {
@@ -156,16 +157,34 @@
 .lan1 {
     padding-top: clamp(30px, 10vh, 150px);
 }
-.fbuttons{
+
+.fbuttons {
     padding-top: clamp(10px, 3vh, 30px);
 }
-@media (max-width:1125px){
-    .epis,.non1{
+
+@media (max-width:1125px) {
+
+    .epis,
+    .non1 {
         display: none !important;
     }
 }
-@media (max-width:300px){
-    .dummy{
-        display: none!important;
+
+@media (max-width:300px) {
+    .dummy {
+        display: none !important;
+    }
+}
+
+@media (max-width:480px) {
+    .contrast4{
+        width: 100% !important;
+        height: 300px !important;
+        object-fit: none;
+    }
+    .start{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
