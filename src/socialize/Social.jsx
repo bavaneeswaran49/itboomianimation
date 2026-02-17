@@ -1,5 +1,5 @@
 import React from 'react'
-import './social.css'
+import './Social.css'
 import social from '../assets/social.png'
 import { FaArrowCircleRight } from "react-icons/fa";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
