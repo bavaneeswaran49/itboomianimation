@@ -127,7 +127,14 @@ const Arrow = {
     x: 10,
   }
 }
-
+const btn = {
+  initial: { backgroundColor: "#1d2939", color: "white" },
+  hover: {
+    backgroundColor: "#6941c6",
+    color: "white",
+    transition: { type: "spring", stiffness: 300, damping: 15 }
+  }
+}
 function Work() {
 
   return (
@@ -148,6 +155,7 @@ function Work() {
                 className="fbutton1"
                 initial="initial"
                 whileHover="hover"
+                variants={btn}
               >
                 <p className="fbuttonp">Get Started</p>
                 <motion.div variants={Arrow}>
@@ -162,7 +170,7 @@ function Work() {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12">
+          <div className="col-lg-6 col-md-6 col-sm-12 dummy">
             <div className="start" >
               <motion.div
                 whileHover="hover"
@@ -228,7 +236,7 @@ function Work() {
                     }}
                   />
                 </motion.div>
-                <motion.div className="epis"  variants={Float1} style={blur}>
+                <motion.div className="epis" variants={Float1} style={blur}>
                   <div style={{ display: "flex", alignItems: "center", gap: "15px" }} >
                     <motion.div variants={Float8} style={icon("#6941c6")}>
                       <img src={home} alt="home" />
@@ -240,7 +248,7 @@ function Work() {
                     </div>
                   </div>
                 </motion.div>
-                <motion.div className="epis"  variants={Float2} style={blur}>
+                <motion.div className="epis" variants={Float2} style={blur}>
                   <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
                     <motion.div variants={Float8} style={icon("#6941c6")}>
                       <img src={home} alt="home" />
@@ -251,7 +259,7 @@ function Work() {
                     </div>
                   </div>
                 </motion.div>
-                <motion.div variants={Float3} style={icon("#1aaa42")} className="none">
+                <motion.div variants={Float3} style={icon("#1aaa42")} className="none non1">
                   <img src={verify} alt="verify" width="24" />
                 </motion.div>
                 <motion.div variants={Float4} style={icon("#f178b6")} className="none">
@@ -330,7 +338,7 @@ const icon = (color) => ({
   justifyContent: "center",
   alignItems: "center",
   zIndex: 20,
-  pointerEvents:"none"
+  pointerEvents: "none"
 });
 
 export default Work;

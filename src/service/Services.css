@@ -84,3 +84,10 @@
     /* color: #d0d5dd; */
     font-size: clamp(10px, 1rem, 14px);
 }
+.service-h3-2 {
+  color: inherit;
+}
+
+.service-icon {
+  color: inherit;
+}

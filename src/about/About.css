@@ -9,7 +9,7 @@
     width: 125px;
     padding: 5px 10px;
     border-radius: 20px;
-    margin-top: clamp(30px, 6vw, 60px);
+    /* margin-top: clamp(30px, 6vw, 0px); */
 }
 
 .about-p {
@@ -170,4 +170,11 @@
     width: 50px;
     /* border-radius: 20px; */
 
+}
+.about-col2,.about-col3,.about-col4,.about-col5,.about-col6 {
+    transition: all 0.3s ease;
+}
+.about-col3:hover,.about-col4:hover,.about-col5:hover,.about-col6:hover {
+   background-color: rgb(83, 55, 158);
+   color: #fff;
 }

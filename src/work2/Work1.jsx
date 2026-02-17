@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, transform } from "framer-motion";
 import img from "../assets/Task prototype/ig1.png";
 import home from "../assets/safe-home.png";
 import verify from '../assets/verify.png'
 import "../App.css";
-import './work1.css'
+import '../work2/work1.css';
 const Contrast = {
   initial: { scale: 1 },
   hover: {
@@ -41,25 +41,25 @@ const Contrast2 = {
   },
 };
 const Float1 = {
-  initial: { y: -190, x: 180 },
+  initial: { y: 50, x: 290 },
   hover: {
-    y: -250,
+    y: -50,
     x: 150,
     transition: { type: "spring", stiffness: 200, damping: 15 },
   },
 };
 
 const Float2 = {
-  initial: { y: 270, x: -150 },
+  initial: { y: 340, x: -190 },
   hover: {
-    y: 200,
-    x: -50,
+    y: 400,
+    x: -150,
     transition: { type: "spring", stiffness: 200, damping: 15 },
   },
 };
 
 const Float8 = {
-  initial: { scale: 1 },
+  initial: { scale: 1, x:50 },
   hover: {
     scale: 1,
     transition: { type: "spring", stiffness: 300, damping: 15 },
@@ -141,45 +141,48 @@ function Work1() {
                 }}
               />
             </motion.div>
+            <div className="bbb">
+              <motion.div className="blur"
+                variants={Float1}
+                initial="initial"
+                animate={jugle ? "hover" : "initial"}
 
-            <motion.div  className="blur"
-              variants={Float1}
-              initial="initial"
-              animate={jugle ? "hover" : "initial"}
+                style={blur}>
+                <div>
+                  <motion.div initial="initial"
+                    animate={jugle ? "hover" : "initial"}
+                    variants={Float8} style={iconStyle("#6941c6")}>
+                    <img src={home} alt="home"  className="home"/>
+                  </motion.div>
 
-              style={blur}>
-              <div>
-                <motion.div initial="initial"
-                  animate={jugle ? "hover" : "initial"}
-                  variants={Float8} style={iconStyle("#6941c6")}>
-                  <img src={home} alt="home" />
-                </motion.div>
-
-                <div className="divclas">
-                  <h3>85%</h3>
-                  <h4>Sales Growth</h4>
+                  <div className="divclas">
+                    <h3>85%</h3>
+                    <h4>Sales Growth</h4>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
-            <motion.div className="blur"
-              initial="initial"
-              animate={jugle ? "hover" : "initial"}
+              </motion.div>
+            </div>
+            <div className="bbb">
+              <motion.div className="blur"
+                initial="initial"
+                animate={jugle ? "hover" : "initial"}
+                variants={Float2}
+                style={blur}>
+                <div className="bbb">
+                  <motion.div initial="initial"
+                    className="blor"
+                    animate={jugle ? "hover" : "initial"}
+                    variants={Float8} style={iconStyle("#6941c6")}>
+                    <img src={home} alt="home"  className="home"/>
+                  </motion.div>
 
-              variants={Float2}
-              style={blur}>
-              <div>
-                <motion.div initial="initial"
-                  animate={jugle ? "hover" : "initial"}
-                  variants={Float8} style={iconStyle("#6941c6")}>
-                  <img src={home} alt="home" />
-                </motion.div>
-
-                <div className="divclas">
-                  <h3>85%</h3>
-                  <h4>Sales Growth</h4>
+                  <div className="divclas">
+                    <h3>85%</h3>
+                    <h4>Sales Growth</h4>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           </motion.div>
         </div>
         <div className="col-lg-7 col-md-12 col-sm-12">
@@ -222,7 +225,7 @@ function Work1() {
 
 const blur = {
   position: "absolute",
-  width: "250px",
+  width: "100px",
   height: "100px",
   backgroundColor: "rgba(255, 255, 255, 0.3)",
   backdropFilter: "blur(10px)",
@@ -245,6 +248,7 @@ const iconStyle = (color) => ({
   justifyContent: "center",
   alignItems: "center",
   zIndex: 20,
+  transform: "translateX(-100px) !important",
 });
 
 export default Work1;

@@ -28,6 +28,7 @@
     font-size: clamp(26px, 5rem, 54px);
     line-height: 100%;
     padding-bottom: 24px;
+    padding-top: clamp(20px, 5vh, 50px);
 }
 
 .para2 {
@@ -87,6 +88,10 @@
 
 .bo {
     border-left: 1px solid rgba(255, 255, 255, 0.13);
+   padding-top: clamp(25px, 3vh, 20px);
+}
+.b{
+     padding-top: clamp(25px, 3vh, 20px);
 }
 
 .ricon {
@@ -121,26 +126,46 @@
     font-weight: 300;
     font-size: 16px;
 }
+
 @media (max-width: 480px) {
 
-  .contrast {
-    width: 280px !important;
-    height: 280px !important;
-  }
+    .contrast {
+        width: 280px !important;
+        height: 280px !important;
+    }
 
-  .contrast1 {
-    width: 220px !important;
-    height: 220px !important;
-  }
+    .contrast1 {
+        width: 220px !important;
+        height: 220px !important;
+    }
 
-  .contrast4 {
-    width: 140px !important;
-  }
+    .contrast4 {
+        width: 140px !important;
+    }
 
-  .blur {
-    display: none!important;
-  }
-  .none,.epis{
-    display: none!important;
-  }
+    .blur {
+        display: none !important;
+    }
+
+    .none,
+    .epis {
+        display: none !important;
+    }
+}
+
+.lan1 {
+    padding-top: clamp(30px, 10vh, 150px);
+}
+.fbuttons{
+    padding-top: clamp(10px, 3vh, 30px);
+}
+@media (max-width:1125px){
+    .epis,.non1{
+        display: none !important;
+    }
+}
+@media (max-width:300px){
+    .dummy{
+        display: none!important;
+    }
 }

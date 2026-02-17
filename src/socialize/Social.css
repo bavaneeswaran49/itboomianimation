@@ -61,6 +61,12 @@ P {
     width: 350px !important;
 }
 
+@media (max-width: 1025px) {
+    .card2 {
+        height: 580px !important;
+    }
+}
+
 .social-card {
     display: flex;
     flex-direction: column;
@@ -70,7 +76,14 @@ P {
     border-radius: 15px;
     padding-top: clamp(20px, 5vw, 40px);
     padding-bottom: clamp(20px, 5vw, 40px);
+    margin-top: 15px !important;
+    border: none;
+}
 
+.social-card:hover {
+    background-color: white;
+    border: 1px solid #e8e4fd30;
+    transition: 0.3s ease-in-out;
 }
 
 .social-btn {
@@ -83,7 +96,13 @@ P {
     padding: 10px 50px;
     border-radius: 30px;
     margin-bottom: clamp(15px, 3vw, 35px);
+}
 
+.social-btn:hover {
+    background-color: rgb(83, 55, 158);
+    color: white;
+    /* border: 1px solid #1D293930; */
+    transition: 0.3s ease-in-out;
 }
 
 .social-h4 {
@@ -97,9 +116,10 @@ P {
     align-items: center;
 }
 
-.card2{
+.card2 {
     height: 660px;
 }
+
 .social-img {
     height: clamp(30px, 5vw, 60px);
     width: clamp(30px, 5vw, 60px);
